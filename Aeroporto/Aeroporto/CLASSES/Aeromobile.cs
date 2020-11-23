@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Aeroporto.CLASSES
 {
-    class Aeromobile
+    abstract class Aeromobile : ICompare
     {
+        protected string _sigla;
+
+        public Aeromobile(string sigla)
+        {
+            this._sigla = sigla;
+        }
+        public abstract bool Superiore();
+
+        public string GetSigla()
+        {
+            return _sigla;
+        }
+
     }
 }
