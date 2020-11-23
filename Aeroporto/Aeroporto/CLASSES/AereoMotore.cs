@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aeroporto.CLASSES
 {
-    class AereoMotore : Aeromobile,ICompare
+    class AereoMotore : Aeromobile
     {
         // Dichiaro la variabile Cavalli come intero
         public int _Cavalli;
@@ -15,19 +15,18 @@ namespace Aeroporto.CLASSES
             this._Cavalli = Cavalli;
         }
         // Implemento il metodo Superiore
-        public override bool Superiore()
-        {
-            ICompare(int _PotenzaSecondoAereo)
-            {
-                if (this._Cavalli > _PotenzaSecondoAereo)
-                    return true;
-                else
-                    return false;
-            }
-        }
+       
         public int GetCavalli()
         {
             return _Cavalli;
+        }
+
+        public override bool Superiore(int _PotenzaSecondoAereo)
+        {
+            if (this._Cavalli > _PotenzaSecondoAereo)
+                return true;
+            else
+                return false;
         }
     }
 }

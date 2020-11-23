@@ -31,19 +31,23 @@ namespace Aeroporto
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtSigla = new System.Windows.Forms.TextBox();
+            this.updPotenza = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radMotore2 = new System.Windows.Forms.RadioButton();
+            this.radAliante2 = new System.Windows.Forms.RadioButton();
+            this.updPotenza2 = new System.Windows.Forms.NumericUpDown();
+            this.txtSigla2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.btnCompara = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radMotore = new System.Windows.Forms.RadioButton();
+            this.radAliante = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.updPotenza)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updPotenza2)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -64,66 +68,65 @@ namespace Aeroporto
             this.label2.TabIndex = 1;
             this.label2.Text = "Cavalli/Efficienza";
             // 
-            // textBox1
+            // txtSigla
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtSigla.Location = new System.Drawing.Point(222, 49);
+            this.txtSigla.Name = "txtSigla";
+            this.txtSigla.Size = new System.Drawing.Size(120, 22);
+            this.txtSigla.TabIndex = 2;
             // 
-            // numericUpDown1
+            // updPotenza
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(222, 98);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 3;
+            this.updPotenza.Location = new System.Drawing.Point(222, 98);
+            this.updPotenza.Name = "updPotenza";
+            this.updPotenza.Size = new System.Drawing.Size(120, 22);
+            this.updPotenza.TabIndex = 3;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(294, 160);
+            this.groupBox1.Controls.Add(this.radMotore2);
+            this.groupBox1.Controls.Add(this.radAliante2);
+            this.groupBox1.Location = new System.Drawing.Point(428, 160);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
-            // radioButton1
+            // radMotore2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(50, 35);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radMotore2.AutoSize = true;
+            this.radMotore2.Location = new System.Drawing.Point(50, 62);
+            this.radMotore2.Name = "radMotore2";
+            this.radMotore2.Size = new System.Drawing.Size(73, 21);
+            this.radMotore2.TabIndex = 1;
+            this.radMotore2.TabStop = true;
+            this.radMotore2.Text = "Motore";
+            this.radMotore2.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radAliante2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(50, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radAliante2.AutoSize = true;
+            this.radAliante2.Location = new System.Drawing.Point(50, 35);
+            this.radAliante2.Name = "radAliante2";
+            this.radAliante2.Size = new System.Drawing.Size(72, 21);
+            this.radAliante2.TabIndex = 0;
+            this.radAliante2.TabStop = true;
+            this.radAliante2.Text = "Aliante";
+            this.radAliante2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown2
+            // updPotenza2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(566, 98);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown2.TabIndex = 8;
+            this.updPotenza2.Location = new System.Drawing.Point(566, 98);
+            this.updPotenza2.Name = "updPotenza2";
+            this.updPotenza2.Size = new System.Drawing.Size(120, 22);
+            this.updPotenza2.TabIndex = 8;
             // 
-            // textBox2
+            // txtSigla2
             // 
-            this.textBox2.Location = new System.Drawing.Point(566, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtSigla2.Location = new System.Drawing.Point(566, 49);
+            this.txtSigla2.Name = "txtSigla2";
+            this.txtSigla2.Size = new System.Drawing.Size(120, 22);
+            this.txtSigla2.TabIndex = 7;
             // 
             // label3
             // 
@@ -143,36 +146,71 @@ namespace Aeroporto
             this.label4.TabIndex = 5;
             this.label4.Text = "Sigla Aereo";
             // 
-            // button1
+            // btnCompara
             // 
-            this.button1.Location = new System.Drawing.Point(362, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCompara.Location = new System.Drawing.Point(362, 305);
+            this.btnCompara.Name = "btnCompara";
+            this.btnCompara.Size = new System.Drawing.Size(104, 51);
+            this.btnCompara.TabIndex = 9;
+            this.btnCompara.Text = "Compara";
+            this.btnCompara.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radMotore);
+            this.groupBox2.Controls.Add(this.radAliante);
+            this.groupBox2.Location = new System.Drawing.Point(84, 160);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            // 
+            // radMotore
+            // 
+            this.radMotore.AutoSize = true;
+            this.radMotore.Location = new System.Drawing.Point(50, 62);
+            this.radMotore.Name = "radMotore";
+            this.radMotore.Size = new System.Drawing.Size(73, 21);
+            this.radMotore.TabIndex = 1;
+            this.radMotore.TabStop = true;
+            this.radMotore.Text = "Motore";
+            this.radMotore.UseVisualStyleBackColor = true;
+            // 
+            // radAliante
+            // 
+            this.radAliante.AutoSize = true;
+            this.radAliante.Location = new System.Drawing.Point(50, 35);
+            this.radAliante.Name = "radAliante";
+            this.radAliante.Size = new System.Drawing.Size(72, 21);
+            this.radAliante.TabIndex = 0;
+            this.radAliante.TabStop = true;
+            this.radAliante.Text = "Aliante";
+            this.radAliante.UseVisualStyleBackColor = true;
             // 
             // frmAeroporto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.btnCompara);
+            this.Controls.Add(this.updPotenza2);
+            this.Controls.Add(this.txtSigla2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.updPotenza);
+            this.Controls.Add(this.txtSigla);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAeroporto";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updPotenza)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updPotenza2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,16 +220,19 @@ namespace Aeroporto
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtSigla;
+        private System.Windows.Forms.NumericUpDown updPotenza;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton radMotore2;
+        private System.Windows.Forms.RadioButton radAliante2;
+        private System.Windows.Forms.NumericUpDown updPotenza2;
+        private System.Windows.Forms.TextBox txtSigla2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCompara;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radMotore;
+        private System.Windows.Forms.RadioButton radAliante;
     }
 }
 

@@ -8,7 +8,7 @@ namespace Aeroporto.CLASSES
 {
     interface ICompare
     {
-       bool Superiore();
+       bool Superiore(int _PotenzaSecondoAereo);
 
     }
 }
