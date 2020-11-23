@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aeroporto
 {
-    public partial class Form1 : Form
+    public partial class frmAeroporto : Form
     {
-        public Form1()
+        public frmAeroporto()
         {
             InitializeComponent();
         }
