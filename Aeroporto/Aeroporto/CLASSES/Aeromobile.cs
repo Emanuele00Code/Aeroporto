@@ -16,9 +16,9 @@ namespace Aeroporto.CLASSES
         }
         public abstract bool Superiore();
 
-        public string Sigla
+        public string GetSigla()
         {
-            get { return _sigla; }
+            return _sigla ;
         }
 
     }
