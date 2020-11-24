@@ -3,23 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Aeroporto.CLASSES
 {
     class Aliante : Aeromobile
     {
-        /*int _power;
-        public Aliante(string sigla, int power):base(sigla)
+        int _Efficienza = 0;
+
+        public Aliante(string _sigla, int EffAlian) : base(_sigla)
         {
-            this._sigla = sigla;
-            this._power = power;
+            this._Efficienza = EffAlian;
         }
-        public new bool Superiore(int _PotenzaSecondoAereo)
+
+        public int GetEfficienza()
         {
-            if (this._power > _PotenzaSecondoAereo)
+            return _Efficienza;
+        }
+
+        public override bool Superiore(int _PotenzaSecondoAereo)
+        {
+            if (this._Efficienza > _PotenzaSecondoAereo)
                 return true;
             else
                 return false;
-        }*/
+        }
+
+
+
+
+
+
     }
 }
