@@ -50,16 +50,16 @@
     <Compile Include="CLASSES\Aeromobile.cs" />
     <Compile Include="CLASSES\Aliante.cs" />
     <Compile Include="CLASSES\ICompare.cs" />
-    <Compile Include="frmAerooporto.cs">
+    <Compile Include="frmAeroporto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAerooporto.Designer.cs">
-      <DependentUpon>frmAerooporto.cs</DependentUpon>
+    <Compile Include="frmAeroporto.Designer.cs">
+      <DependentUpon>frmAeroporto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAerooporto.resx">
-      <DependentUpon>frmAerooporto.cs</DependentUpon>
+    <EmbeddedResource Include="frmAeroporto.resx">
+      <DependentUpon>frmAeroporto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

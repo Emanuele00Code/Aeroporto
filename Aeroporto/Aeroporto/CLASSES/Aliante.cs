@@ -9,6 +9,7 @@ namespace Aeroporto.CLASSES
 {
     class Aliante : Aeromobile
     {
+        //Dichiaro la variabile _Efficienza di tipo intero
         int _Efficienza = 0;
 
         public Aliante(string _sigla, int EffAlian) : base(_sigla)
@@ -16,10 +17,13 @@ namespace Aeroporto.CLASSES
             this._Efficienza = EffAlian;
         }
 
+
         public int GetEfficienza()
         {
             return _Efficienza;
         }
+
+        //Implemento del metodo Superiore
 
         public override bool Superiore(int _PotenzaSecondoAereo)
         {
