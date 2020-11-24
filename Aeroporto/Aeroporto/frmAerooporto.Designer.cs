@@ -154,6 +154,7 @@ namespace Aeroporto
             this.btnCompara.TabIndex = 9;
             this.btnCompara.Text = "Compara";
             this.btnCompara.UseVisualStyleBackColor = true;
+            this.btnCompara.Click += new System.EventHandler(this.btnCompara_Click_1);
             // 
             // groupBox2
             // 
