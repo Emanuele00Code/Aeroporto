@@ -64,6 +64,12 @@ namespace Aeroporto
 
         private void btnCompara_Click_1(object sender, EventArgs e)
         {
+            //per default se il radiobutton non è stato usato si considera motore
+            if(txtSigla.Text==""||updPotenza.Value==0)
+            {
+                MessageBox.Show("Non hai inserito almeno un dato!", "Errore");
+                return;
+            }
             if (radAliante.Checked)
             {
                 string dato = "";
@@ -128,6 +134,11 @@ namespace Aeroporto
 
         private void btnCompara_Click(object sender, EventArgs e)
         {
+            if (cmb1.SelectedItem==null || cmb2.SelectedItem == null)
+            {
+                MessageBox.Show("Non hai selezionato almeno un dato!", "Errore");
+                return;
+            }
             int posizionetratto1 = cmb1.SelectedItem.ToString().IndexOf("-");
             int posizionepv1 = cmb1.SelectedItem.ToString().IndexOf(";");
             string tipo1 = cmb1.SelectedItem.ToString().Substring(0, posizionetratto1);
